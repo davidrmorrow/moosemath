@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moose Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="moose">
+            <img src="mathmoose2.webp" alt="Moose Character">
+        </div>
+        <div id="main-content">
+            <h1>Moose Math</h1>
+			
+		<div id="game">
+		  <h2 id="question">Loading...</h2>
+		  <div id="answers">
+			<!-- Answer buttons will be added here by JavaScript -->
+		  </div>
+		  <p id="score">Score: 0</p>
+		</div>
+
+		<div id="control-panel">
+		  <h3>Settings</h3>
+		  <div class="operation" data-operation="+">
+			<input type="checkbox" id="add" checked>
+			<label for="add">Addition (+)</label>
+			<div class="range">
+			  <label>Min:</label>
+			  <input type="number" class="min-number" value="1">
+			</div>
+			<div class="range">
+			  <label>Max:</label>
+			  <input type="number" class="max-number" value="50">
+			</div>
+		  </div>
+		  <div class="operation" data-operation="-">
+			<input type="checkbox" id="subtract" checked>
+			<label for="subtract">Subtraction (-)</label>
+			<div class="range">
+			  <label>Min:</label>
+			  <input type="number" class="min-number" value="1">
+			</div>
+			<div class="range">
+			  <label>Max:</label>
+			  <input type="number" class="max-number" value="100">
+			</div>
+		  </div>
+		  <div class="operation" data-operation="×">
+			<input type="checkbox" id="multiply" checked>
+			<label for="multiply">Multiplication (×)</label>
+			<div class="range">
+			  <label>Min:</label>
+			  <input type="number" class="min-number" value="1">
+			</div>
+			<div class="range">
+			  <label>Max:</label>
+			  <input type="number" class="max-number" value="10">
+			</div>
+		  </div>
+		  <div class="operation" data-operation="÷">
+			<input type="checkbox" id="divide" checked>
+			<label for="divide">Division (÷)</label>
+			<div class="range">
+			  <label>Min:</label>
+			  <input type="number" class="min-number" value="1">
+			</div>
+			<div class="range">
+			  <label>Max:</label>
+			  <input type="number" class="max-number" value="10">
+			</div>
+		  </div>
+		  <button onclick="startGame()">Restart Game</button>
+		</div>
+		
+		</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
