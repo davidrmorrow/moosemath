@@ -10,20 +10,22 @@ body, html {
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
+	justify-content: center;
 }
 
 #moose img {
     max-width: 150px; /* Adjust based on your image's size */
-    margin-right: -133px;
+    margin-right: -111px;
 	position: relative;
 	z-index: 2;
 }
 
 #main-content {
     max-width: 600px;
+	margin: auto;
 }
 
-#game, #control-panel {
+#game {
     background-color: #fff; /* Example background color */
     padding: 20px;
     border-radius: 5px;
@@ -51,13 +53,32 @@ h1, h3, #question, #score {
   cursor: pointer;
 }
 
-#control-panel {
-  background-color: #D2B48C; /* Light gray background */
+#settings-panel {
+	background-color: #D2B48C;
+    display: block;
+	width: 30em;
+	margin: 0 auto;
+    border: 1px solid #ccc;
+	border-radius: 5px;
+    padding: 20px;
 }
 
-#control-panel h3 {
-  text-align: center;
+input[type="radio"] {
+    margin: 5px 10px 5px 33%;
 }
+
+label {
+    margin-right: 20px;
+}
+
+#custom-settings {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+	border-radius: 5px;
+	display: none;
+}
+
 
 .operation {
   display: flex;
@@ -99,6 +120,13 @@ button {
   font-size: 16px;
 }
 
+.reset-warning {
+	font-size:10px;
+	font-style: italic;
+	font-color: #999;
+	text-align: center;
+}
+
 /* Responsive styles for screens with a max width of 768px (common tablet breakpoint) */
 @media (max-width: 768px) {
     #container {
@@ -108,8 +136,10 @@ button {
 
     #moose img {
         max-width: 100px; /* Smaller size for smaller screens */
-        margin-right: 0;
+        margin-right: -100px;
         margin-bottom: 20px;
+		z-index: 2;
+		position: relative;
     }
 
     #main-content {
@@ -127,6 +157,9 @@ button {
     #moose img {
         max-width: 80px; /* Even smaller size for mobile screens */
         margin-bottom: 10px;
+		margin-right: -80px;
+		z-index: 2;
+		position: relative;
     }
 
     #main-content {

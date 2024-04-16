@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#moose img {
+    max-width: 150px; /* Adjust based on your image's size */
+    margin-right: -133px;
+	position: relative;
+	z-index: 2;
+}
+
+#main-content {
+    max-width: 600px;
+}
+
+#game, #control-panel {
+    background-color: #fff; /* Example background color */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h3, #question, #score {
+    text-align: center;
+}
+
+
+#answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#answers button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#control-panel {
+  background-color: #D2B48C; /* Light gray background */
+}
+
+#control-panel h3 {
+  text-align: center;
+}
+
+.operation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.operation label {
+  margin-right: 10px;
+}
+
+.operation > label {
+  width: 7.5em;
+}
+
+
+.range {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.range label, .range input {
+  margin-right: 5px;
+}
+
+.range input {
+  width: 60px; /* Adjust input width as needed */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Responsive styles for screens with a max width of 768px (common tablet breakpoint) */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #moose img {
+        max-width: 100px; /* Smaller size for smaller screens */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #main-content {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+/* Responsive styles for mobile devices (max-width: 480px is a common mobile breakpoint) */
+@media (max-width: 480px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #moose img {
+        max-width: 80px; /* Even smaller size for mobile screens */
+        margin-bottom: 10px;
+    }
+
+    #main-content {
+        width: 95%; /* Allow a little margin on the sides */
+    }
+}
+
