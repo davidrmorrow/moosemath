@@ -118,6 +118,9 @@ function generateAnswers(correctAnswer) {
         button.addEventListener('click', function() {
             if (parseInt(this.innerText) === correctAnswer) {
                 console.log('Correct!');
+		// Increment score for correct answer
+		score += incorrectAnswersRemaining;
+		scoreElement.innerText = `Score: ${score}`;
                 generateQuestion(); // Generate next question on correct answer
             } else {
                 this.remove(); // Remove incorrect answer from view
