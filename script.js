@@ -3,11 +3,7 @@ const answersElement = document.getElementById('answers');
 const scoreElement = document.getElementById('score');
 let score = 0;
 let maxPossibleScore = 0;
-let incorrectAnswersRemaining = 5; // New variable to track remaining incorrect answers
-
-//let selectedOperations = ['+', '-', '×', '÷'];
-//let minNumber = 1;
-//let maxNumber = 10;
+let incorrectAnswersRemaining = 4;
 
 let gameSettings = {
     currentDifficulty: 'easy',
